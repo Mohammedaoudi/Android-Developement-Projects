@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:title="Hello Toast"
+        android:background="@color/mycolor"
+        android:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/taostBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/mycolor"
+        android:text="@string/toast"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cornerRadius="0dp"
+        />
+
+    <TextView
+        android:id="@+id/zero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:textColor="@color/mycolor"
+        android:textSize="300sp"
+        android:text="@string/zero"
+        app:layout_constraintTop_toBottomOf="@id/taostBtn"
+        app:layout_constraintBottom_toTopOf="@id/count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/count"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/mycolor"
+        android:text="@string/count"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cornerRadius="0dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Hello Toast"
+            android:background="#3A3AC5"
+            android:titleTextColor="@color/white"
+
+
+            />
+
+        <Button
+            android:id="@+id/taostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3A3AC5"
+            android:text="@string/toast"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="0dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#FFFF00"
+            android:gravity="center"
+            android:textColor="#3A3AC5"
+            android:textSize="300sp"
+            android:text="@string/zero"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#3E3ECA"
+            android:text="@string/count"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="0dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>-->
