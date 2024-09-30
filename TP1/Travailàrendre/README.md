@@ -27,5 +27,5 @@ The objective of this exercise is to develop an Android application with two scr
 
 ## Video Demonstration
 <div align="center">
-  https://github.com/user-attachments/assets/54401664-0e4c-4c7e-a160-fba3fd99a57a
+https://github.com/user-attachments/assets/54401664-0e4c-4c7e-a160-fba3fd99a57a
 </div>
