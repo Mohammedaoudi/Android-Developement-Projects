@@ -24,4 +24,5 @@ The objective of this exercise is to create an Android application that displays
 
    
 https://github.com/user-attachments/assets/1d9168fe-6ee6-4194-b943-b7925b85265e"
+
 </div>
