@@ -1,7 +1,7 @@
 # Travail à Rendre
 
 ## Objective
-The objective of this exercise is to develop an Android application with two screens: a registration form and a summary screen that displays the entered information.
+The objective of this exercise is to develop an Android application with two screens: a form and a summary screen that displays the entered information.
 
 ## Components Used
 - **TextInputEditText**: For entering information (name, email, phone number, address).
