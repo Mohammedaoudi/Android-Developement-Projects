@@ -1,7 +1,7 @@
-# Exo2 - Local Tax Calculator for Cars
+# Exo2
 
 ## Objective
-The objective of this exercise is to develop an Android application that calculates local taxes for a car based on specific formulas.
+The objective of this exercise is to develop an Android application that calculates taxes based on specific formulas.
 
 ## Components Used
 - **TextInputEditText**: For entering input values.
