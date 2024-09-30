@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">exo3</string>
+    <string name="qst1">1.Le pattern MVC signifie :</string>
+    <string name="quitter">Quitter</string>
+    <string name="non">Non</string>
+    <string name="oui">Oui</string>
+    <string name="un">Multiple Versions Combined</string>
+    <string name="deux">Model View Controller</string>
+    <string name="trois">Main Value Compiled</string>
+    <string name="quatre">Mandatory Validated Controls</string>
+    <string name="qst2">2.La syntaxe $[x] est permise dans une JSP :</string>
+    <string name="suivant">Suivant</string>
+</resources>

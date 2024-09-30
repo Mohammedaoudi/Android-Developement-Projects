@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context=".SecondActivity">
+
+        <TextView
+            android:id="@+id/qst1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/res1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/qst2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/res2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif"/>
+
+        <Button
+            android:id="@+id/retour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"/>
+
+</LinearLayout>

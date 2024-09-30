@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Travail à rendre</string>
+    <string-array name="villes">
+        <item>Agdim</item>
+        <item>Anezi</item>
+        <item>Ait melloul</item>
+        <item>Bouznika</item>
+    </string-array>
+</resources>

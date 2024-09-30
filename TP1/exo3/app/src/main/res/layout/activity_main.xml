@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- AppBar with shadow elevation -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ImageView aligned to the start -->
+            <ImageView
+                android:id="@+id/appbar_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:src="@mipmap/android"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Toolbar aligned beside the ImageView -->
+            <Toolbar
+                android:id="@+id/appbar_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:title="E-certificates"
+                android:titleTextColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/appbar_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Divider (blue line under the toolbar) -->
+            <Toolbar
+                android:id="@+id/trait"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appbar_toolbar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- First Question -->
+    <TextView
+        android:id="@+id/qst1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:text="@string/qst1"
+        app:layout_constraintTop_toBottomOf="@id/bar" />
+
+    <!-- RadioGroup for the first question options -->
+    <RadioGroup
+        android:id="@+id/checkboxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/qst1">
+
+        <RadioButton
+            android:id="@+id/un"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/un"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+
+        <RadioButton
+            android:id="@+id/deux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deux"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+
+        <RadioButton
+            android:id="@+id/trois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trois"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+
+        <RadioButton
+            android:id="@+id/quatre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quatre"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+    </RadioGroup>
+
+    <!-- Second Question -->
+    <TextView
+        android:id="@+id/qst2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:text="@string/qst2"
+        app:layout_constraintTop_toBottomOf="@id/checkboxes" />
+
+    <!-- RadioGroup for the second question options -->
+    <RadioGroup
+        android:id="@+id/radioBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/qst2">
+
+        <RadioButton
+            android:id="@+id/oui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oui"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/non"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/non"
+            android:textSize="16sp"
+            android:paddingStart="10dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/quitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="#BFBCBC"
+        android:text="@string/quitter"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:id="@+id/suivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="#BFBCBC"
+        android:text="@string/suivant"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quitter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
