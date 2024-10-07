@@ -5,7 +5,8 @@ This repository contains practical assignments (TPs) for the course **Developmen
 ## Contents
 
 - **TP1**: User interfaces.
-...
+- **TP2**: PIZZA RECIPES APP.
+
   
 Each folder contains source code, related resources, and implementation details for the respective TP.
 
