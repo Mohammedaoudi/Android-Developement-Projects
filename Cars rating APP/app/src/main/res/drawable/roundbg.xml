@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dégradé pour simuler l'effet 3D (relief) -->
+    <gradient
+        android:startColor="@color/black"
+        android:endColor="@color/gray"
+        android:angle="270" /> <!-- Angle du dégradé, 270 pour un dégradé de haut en bas -->
+
+    <!-- Coins arrondis -->
+    <corners
+        android:topRightRadius="70dp"
+        android:topLeftRadius="0dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp" />
+
+    <!-- Bordure optionnelle pour ajouter une apparence plus marquée -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/darker_gray" />
+
+    <!-- Ombre ou padding pour donner un peu plus de profondeur -->
+    <padding
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp"
+        android:bottom="5dp" />
+</shape>
