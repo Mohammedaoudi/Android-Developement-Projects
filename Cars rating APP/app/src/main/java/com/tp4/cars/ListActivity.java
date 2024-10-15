@@ -39,7 +39,10 @@ public class ListActivity extends AppCompatActivity {
 
         cars = new ArrayList<>();
         service = CarService.getInstance();
-        init();
+
+        if (service.findAll().isEmpty()) {
+            init();
+        }
         recyclerView =findViewById(R.id.recycler_view);
         carAdapter = new CarAdapter(service.findAll(),this);
         recyclerView.setAdapter(carAdapter);
@@ -52,6 +55,7 @@ public class ListActivity extends AppCompatActivity {
         MenuItem menuItem = menu.findItem(R.id.search);
         SearchView searchView = (SearchView) menuItem.getActionView();
 
+        searchView.setQueryHint("tapez la voiture que vous cherchez");
         searchView.setOnQueryTextListener(new
                                                   SearchView.OnQueryTextListener() {
                                                       @Override
